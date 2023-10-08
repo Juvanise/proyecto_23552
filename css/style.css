@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 50vh;
+    /*background-image: url(../assets/img/hawaii.jpg);*/
+    background:linear-gradient(to right, #000000d4, #00000094, #00000085),url(../assets/img/hawaii.jpg);
+    color: white;
+    background-size: cover;
+}
+.contenedorNav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 15vh;
+}
+.logoNav{
+    display: flex;
+    background-color:rgb(53,58, 64);
+    height: 15vh;
+    font-size: 1.5rem;
+}
+.logo a{
+    width: 5px;
+    justify-content: end;
+}
+.headerLogo{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(53, 58, 64);
+}
+.listaHeader{
+    font-size: 20px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    list-style: none;
+    display: inline;
+    padding: 5px;   
+    }
+.colorWhite{
+color: white;
+}
+.colorGris{
+    color: gray;
+}
+.colorVerde{
+    color: darkgreen;
+}
+.logoNav{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.linkNav{
+    text-decoration: none;
+    display: inline-block;    
+}
+header ul li{
+    display: inline;
+    margin-right: 10px;
+}
+.conferencia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+}
+.contenedorConf{
+    height: 100px;
+    width: 40%;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+.titulo{
+    position: relative;
+}
+.botones{
+    height: 100px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+.botones a{
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-top: 30px;
+}
+.botonVerde{
+    background-color: green;
+}
+.contenedorMain{
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0;
+    
+}
+.oradores{
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.oradores h2{
+    padding-top: 10px;
+}
+
+.tarjetas{
+    background-color: white;
+    height: 75%;
+    border: 1px solid gray;
+    border-radius: 5px 5px 0px 0px;
+    width: 250px;
+    margin-right: 20px;
+    text-align: left;
+    margin-top: 10px;    
+}
+.tarjetas img{
+    width: 100%;
+    border-radius: 5px;
+    height: 60%;
+    object-fit: cover;
+}
+.cuerpoTarjetas{
+margin: 10px;
+}
+.cuerpoTarjetas h4{
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 0 5px;
+}
+.tituloNombre{
+    margin-top: 5px;
+    margin-bottom: 10px;
+} 
+.colorCeleste{
+    background-color: aqua;
+    color: aliceblue;
+}
+.colorAmarillo{
+    background-color: gold;
+    color: rgb(11, 11, 12);
+}
+.colorGris{
+background-color: darkslategrey;
+color: aliceblue;
+}
+.colorRojo{
+    background-color: red;
+}
+.contenedorFecha{
+    display: flex;
+}
+.octubre{
+    background-color: rgb(53, 58, 64);
+    color: antiquewhite;
+    size: 15px;
+}
+.octubre a{
+    text-decoration: none;
+    padding: 5px;
+    color: aliceblue;
+    border: 2px solid white;
+    margin-top: 30px;
+}
+.contenedorFecha__link{
+    margin-top: 30px;
+}
+.oracion{
+    margin-top: 10px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario-oradores{
+    text-align: center;
+    margin: 5px 5px 5px 10px;
+}
+.enviar{
+    text-align: center;
+    width: 40%;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    background: rgb(148, 203, 59);
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+.footer{
+    width: 100%;
+    height: 20vh;
+    background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+    display: flex;
+    /*justify-content: center;*/
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+.listafooter {
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+}
+.listafooter a{
+width: 100%;
+color: white;
+display: inline;
+text-decoration: none;
+margin-right: 80px;
+}
+footer ul li{
+    display: inline;
+}
+
+    
