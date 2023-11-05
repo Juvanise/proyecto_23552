@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto Integrador Front Julieta Ochoa</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header>
+        <header class="container">
+            <!--
             <section class="logoNav">
                 <div class="headerLogo">
                     <div class="logo">
@@ -27,7 +29,35 @@
                 </div>
                 </div>
             </section>
-            
+            -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="./assets/img/codoacodo.png" alt="logo de codo a codo" width="100px"></a>
+                  Conf Bs As
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#oradores">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#lugarFecha">El lugar y la fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#formulario-oradores">Conviertete en orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorVerde" href="./pages/tickets.html">Comprar tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             <section id="conferencia" class="conferencia">
                 <div class="contenedorConf">
                     
@@ -43,64 +73,71 @@
                     
             </section>
         </header>
-        <main>
-            <section id="oradores" class="oradores">
-                <h2><div>CONOCE A LOS</div>ORADORES</h2>
-                <div class="contenedorMain">
-                    <div class="cuerpoTarjetas">
-                        <div class="tarjetas">
-                            <img src="./assets/img/steve.jpg" alt="imagen de Steve Jobs" class="tarjetas">
-                            <h4 class="colorAmarillo">JavaScript</h4>
-                            <h4 class="colorCeleste">React Native</h4>
-                            <h3 class="tituloNombre">Steve Jobs</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque quae qui sit dolor consectetur, quis, quam earum, ullam laudantium laborum!</p>
+        <main class="container-fluid">
+            <section id="oradores" class="container mb-4">
+                <h2 class="text-center"><div>CONOCE A LOS</div>ORADORES</h2>
+                   <div class="row justify-content-center">
+                        <div class="border border-2 col-12 col-sm-8 col-md-8 col-lg-4">
+                            <img src="./assets/img/steve.jpg" alt="imagen de Steve Jobs" class="card-img-top" >
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <span class="badge bg-warning text-dark">Javascript</span>
+                                    <span class="badge bg-info">React</span>
+                                </div>
+                                <h5 class="card-title">Steve Jobs</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, animi! Consectetur explicabo, aliquam magni tempore ab fugit ea illo aspernatur reprehenderit possimus fugiat nesciunt! Distinctio nobis corporis iste fugiat nisi.</p>
+                            </div>
+                        </div>
+                        <div class="border border-2 col-12 col-sm-8 col-md-8 col-lg-4 ">
+                            <img src="./assets/img/bill.jpg" alt="Bill Gates" class="card-img-top" >
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-warning text-dark">Sistemas operativos</span>
+                                        <span class="badge bg-info">c++</span>
+                                    </div>
+                                        <h5 class="card-title">Bill Gates</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, animi! Consectetur explicabo, aliquam magni tempore ab fugit ea illo aspernatur reprehenderit possimus fugiat nesciunt! Distinctio nobis corporis iste fugiat nisi.</p>
+                                </div>
+                        </div>
+                        <div class="border border-2 col-12 col-sm-8 col-md-8 col-lg-4">
+                            <img src="./assets/img/ada.jpeg" alt="Ada Lovelace" class="card-img-top" >
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-warning text-dark">Negocios</span>
+                                        <span class="badge bg-danger">Cobol</span>
+                                    </div>
+                                        <h5 class="card-title">Ada Lovelace</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, animi! Consectetur explicabo, aliquam magni tempore ab fugit ea illo aspernatur reprehenderit possimus fugiat nesciunt! Distinctio nobis corporis iste fugiat nisi.</p>
+                                </div>
                         </div>
                     </div>
-                    <div class="cuerpoTarjetas">
-                        <div class="tarjetas">
-                            <img src="./assets/img/bill.jpg" alt="Bill Gates" >
-                            <h4 class="colorAmarillo">Sistemas operativos</h4>
-                            <h4 class="colorCeleste">C++</h4>
-                            <h3 class="tituloNombre">Bill Gates</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quaerat asperiores! Porro accusamus possimus officia adipisci sed cupiditate eos ullam reiciendis cum architecto? </p>
-                        </div>
-                    </div>    
-                    <div class="cuerpoTarjetas">
-                        <div class="tarjetas">
-                            <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
-                            <h4 class="colorGris">Algoritmos</h4>
-                            <h4 class="colorRojo">Cobol</h4>
-                            <h3 class="tituloNombre">Ada Lovelace</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptatibus aliquid, consequuntur, alias aliquam qui maiores accusamus dolor laboriosam, atque aut sunt quo facer</p>
-                        </div>
-                    </div>    
-                </div>
-                
-            </section>
-            <section id="lugarFecha">
-                <div class="contenedorFecha">
-                    <div>
+            </section> 
+            <section id="lugarFecha" class="container-fluid">
+                <div class="row">
+                    <div class="col">
                         <img src="./assets/img/honolulu.jpg" alt="Mar del Plata" width="600" loading="lazy">
                     </div>
-                    <div class="octubre">
+                    <div class="col bg-secondary">  
                         <h2>Bs As-Octubre</h2>
                         <p>Buenos Aires es la provincia y localidad mas grande de Argentina,en los Estados Unidos.Honolulu es la mas sureña de entre las principales ciudades estadounidenses.Aunque el nombre de Honolulu se refiere al area urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(aproxiumadamnete 600km de superficie)</p>
-                    
-                        <a class="contenedorFecha__link" href="./pages/404.html">Conoce mas</a>
-                        </div>
+                        <a class="conoce" href="./pages/404.html">Conoce mas</a>
+                    </div>
                 </div>
-               
             </section>
             <section id="formulario-oradores" class="formulario-oradores">
                 <h2><div class="oracion">CONVIERTETE EN UN</div>ORADOR</h2>
                 <p>Anotate como orador para dar una charla ignite.Cuentanos de que quieres hablar!</p>
-            <form action="./pages/404.html" method="get" >
-                <div>
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
-                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+            <form action="./pages/404.html" method="get">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    </div>
+                <div class="row">
+                    <div class="col">
+                        <textarea name="comentario" id="comentario" cols="45" rows="10" placeholder="Sobre que quieres hablar?" required></textarea>
+                    </div>
                 </div>
-                <div>
-                    <textarea name="comentario" id="comentario" cols="45" rows="10" placeholder="Sobre que quieres hablar?" required></textarea>
                 </div>
                 <div class="enviar">
                     <input type="submit" value="Enviar" class="enviar">
@@ -108,23 +145,22 @@
             </form>
             </section>
         </main>
-        <footer>
-            <section>
-                <div class="footer">
-                    <nav class="nav">
+        <footer class="footer text-center">
+            <section >
+                <div class="container"></div>
+                    <nav class="row">
                         <ul class="listafooter">
-                            <li><a  href="#">Preguntas<br>frecuentes</a></li>
-                            <li><a  href="#">Contactanos</a></li>
-                            <li><a  href="#">Prensa</a></li>
-                            <li><a  href="#">Conferencias</a></li>
-                            <li><a  href="#">Terminos y condiciones</a></li>
-                            <li><a  href="#">Privacidad</a></li>
+                                <li class="col"><a  href="#">Preguntas frecuentes</a></li>
+                                <li class="col"><a  href="#">Contactanos</a></li>
+                                <li class="col"><a  href="#">Prensa</a></li>
+                                <li class="col"><a  href="#">Conferencias</a></li>
+                                <li class="col"><a  href="#">Terminos y condiciones</a></li>
+                                <li class="col"><a  href="#">Privacidad</a></li>
                         </ul>
                     </nav>
                 </div>
             </section>
-            
-            
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
     </body>
 </html>

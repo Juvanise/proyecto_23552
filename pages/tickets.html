@@ -4,19 +4,179 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto Integrador Front Julieta Ochoa</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <header>
-            <a href="#"><img src="../assets/img/codoacodo.png" alt="logo de codo a codo"></a>
-            
-            <h2>Conf Bs As</h2>
-            <nav>
-                <ul>
-                    <li><a href="../index.html#conferencia">La conferencia</a></li>
-                    <li><a href="../index.html#oradores">Los oradores</a></li>
-                    <li><a href="">El lugar y la fecha</a></li>
-                    <li><a href="../index.html#formulario-oradores">Conviertete en orador</a></li>
-                    <li><a href="#">Comprar tickets</a></li>
-                </ul>
-            </nav>
+        <header class="container">
+            <!--<section class="logoNav">
+                <div class="headerLogo">
+                    <div class="logo">
+                        <a href="#"><img src="../assets/img/codoacodo.png" alt="logo de codo a codo" width="100px"></a>
+                        <h2 class="colorWhite linkNav">Conf Bs As</h2>
+                    </div>
+                    <div class="contenedorNav">
+                    <nav>
+                        <ul class="listaHeader">
+                            <li><a class="colorWhite linkNav" href="../index.html">La conferencia</a></li>
+                            <li><a class="colorGris linkNav" href="#oradores">Los oradores</a></li>
+                            <li><a class="colorGris linkNav" href="#lugarFecha">El lugar y la fecha</a></li>
+                            <li><a class="colorGris linkNav" href="#formulario-oradores">Conviertete en orador</a></li>
+                            <li><a class="colorVerde linkNav" href="./pages/tickets.html">Comprar tickets</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                </div>-->
+            </section>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="../assets/img/codoacodo.png" alt="logo de codo a codo" width="100px"></a>
+                  Conf Bs As
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">La conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html#oradores">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html#lugarFecha">El lugar y la fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html#formulario-oradores">Conviertete en orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorVerde" href="#">Comprar tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+          <section class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-xl-7 ">
+
+              <div class="row text-center">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header bg-primary border-primary text-white">
+                      <h4>Estudiante</h4>
+                    </div>
+                    <div class="card-body">
+                      <p>Tiene un descuento</p>
+                      <h3>80%</h3>
+                      <small class="">*Presentar documentacion</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header text-white bg-warning border-warning">
+                      <h4>Trainee</h4>
+                    </div>
+                    <div class="card-body">
+                      <p>Tiene un descuento</p>
+                      <h3>50%</h3>
+                      <small class="">*Presentar documentacion</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header text-white bg-info border-info">
+                      <h4>Junior</h4>
+                    </div>
+                    <div class="card-body border-info">
+                      <p>Tiene un descuento</p>
+                      <h3>15%</h3>
+                      <small class="">*Presentar documentacion</small>
+                    </div>
+                  </div>
+                </div>
+              
+            <h2 class="titulo-gral">VENTA <br><span>VALOR DE TICKETS $200</span></h2>
+
+            <form action="">
+              <div class="row">
+                <div class="col-md mb-3">
+                  <input type="text" class="form-control" placeholder="Nombre" id="nombre" required>
+                  <div class="invalid-feedback" id="mensajeErrorNombre">
+                    <p>Ingrese su nombre</p>
+                  </div>
+                </div>
+                <div class="col-md mb-3">
+                  <input type="text" class="form-control" placeholder="Apellido" id="apellido" required>
+                  <div class="invalid-feedback" id="mensajeErrorApellido">
+                    <p>Ingrese su apellido</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col mb-3">
+                  <input type="email" class="form-control" placeholder="email" id="mail" required>
+                  <div class="invalid-feedback" id="mensajeErrorMail">
+                    <p>Ingrese su mail</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md mb-3">
+                  <label for="cantidadTickets" class="form-label">Cantidad</label>
+                  <input type="number" class="form-control" placeholder="cantidad" id="cantidadTickets" min = "1" required>
+                  <div class="invalid-feedback" id="mensajeErrorTickets">
+                    <p>Ingrese cantidad de tickets</p>
+                  </div>
+                </div>
+                <div class="col-md mb-3">
+                  <label for="categoriaSelect" class="form-label">Categoria</label>
+                  <select class="form-select" id="categoriaSelect">
+                    
+                    <option value="" selected >Seleccione</option>
+                    <option value="0">Sin categoria</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                  </select>
+                </div>
+              </div>
+              <div class="alert alert-primary mt-2 mb-4" role="alert">
+                Total a pagar:$ <span id="totalPago" class="align-middle"></span>
+              </div>
+              <div class="row gx-2">
+                <div class="col">
+                  <button type="reset" class="w-100 btn btn-lg btn-form text-white botonVerde " id="btnBorrar">Borrar</button>
+                </div>
+                <div class="col">
+                  <button type="button" class="w-100 btn btn-lg btn-form text-white botonVerde" id="btnResumen">Resumen</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div> 
+          </section>
+        </main>
+        <footer class="footer text-center">
+          <section >
+              <div class="container"></div>
+                  <nav class="row">
+                      <ul class="listafooter">
+                              <li class="col"><a  href="#">Preguntas frecuentes</a></li>
+                              <li class="col"><a  href="#">Contactanos</a></li>
+                              <li class="col"><a  href="#">Prensa</a></li>
+                              <li class="col"><a  href="#">Conferencias</a></li>
+                              <li class="col"><a  href="#">Terminos y condiciones</a></li>
+                              <li class="col"><a  href="#">Privacidad</a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </section>
+      </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="../js/comprar-tickets.js"></script>    
+        </body>      
